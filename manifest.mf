@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+OpenIDE-Module: org.udevi.Symfony2CodeTemplates
+OpenIDE-Module-Layer: org/udevi/Symfony2CodeTemplates/layer.xml
+OpenIDE-Module-Localizing-Bundle: org/udevi/Symfony2CodeTemplates/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.0
+

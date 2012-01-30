@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE codetemplates PUBLIC "-//NetBeans//DTD Editor Code Templates settings 1.0//EN" "http://www.netbeans.org/dtds/EditorCodeTemplates-1_0.dtd">
+<codetemplates>
+    <codetemplate abbreviation="ostr" xml:space="preserve">
+        <code><![CDATA[@ORM\Column(type="string", length="${length}")]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="o121" xml:space="preserve">
+        <code><![CDATA[@OneToOne(targetEntity="${targetclass}")
+   * @JoinColumn(name="${local_id}", referencedColumnName="${remote_id}")]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="oid" xml:space="preserve">
+        <code><![CDATA[@ORM\Id
+     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="${strategy}")]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="otable" xml:space="preserve">
+        <code><![CDATA[@ORM\Table(name="${tablename}")]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="oent" xml:space="preserve">
+        <code><![CDATA[@ORM\Entity]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="oint" xml:space="preserve">
+        <code><![CDATA[@ORM\Column(type="integer")]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="om2m" xml:space="preserve">
+        <code><![CDATA[@ManyToMany(targetEntity="${targetclass}", inversedBy="${inversedby}")
+   * @JoinTable(name="${tablename}",
+   *      joinColumns={@JoinColumn(name="${local_id}", referencedColumnName="${remote_id}")},
+   *      inverseJoinColumns={@JoinColumn(name="${remote_id_inv}", referencedColumnName="${remote_id_inv}")}
+   *      )]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="om21" xml:space="preserve">
+        <code><![CDATA[@ORM\ManyToOne(targetEntity="${targetclass}")
+    * @ORM\JoinColumn(name="${local_id}", referencedColumnName="${remote_id}")]]></code>
+    </codetemplate>
+</codetemplates>
