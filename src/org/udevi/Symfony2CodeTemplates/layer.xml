@@ -3,7 +3,7 @@
 <filesystem>
     <folder name="Editors">
         <folder name="text">
-            <folder name="twig">
+            <folder name="x-twig">
                 <folder name="CodeTemplates">
                     <file name="org-udevi-symfony2-twig-snippets.xml" url="org-udevi-symfony2-twig-snippets.xml"/>
                 </folder>
