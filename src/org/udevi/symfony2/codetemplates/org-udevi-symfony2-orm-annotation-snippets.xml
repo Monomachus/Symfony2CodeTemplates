@@ -2,7 +2,7 @@
 <!DOCTYPE codetemplates PUBLIC "-//NetBeans//DTD Editor Code Templates settings 1.0//EN" "http://www.netbeans.org/dtds/EditorCodeTemplates-1_0.dtd">
 <codetemplates>
     <codetemplate abbreviation="ostr" xml:space="preserve">
-        <code><![CDATA[@ORM\Column(type="string", length="${length}")]]></code>
+        <code><![CDATA[@ORM\Column(type="string", length=${length})]]></code>
     </codetemplate>
     <codetemplate abbreviation="o121" xml:space="preserve">
         <code><![CDATA[@OneToOne(targetEntity="${targetclass}")
