@@ -8,8 +8,8 @@
         <code><![CDATA[@ORM\Column(type="text")]]></code>
     </codetemplate>
     <codetemplate abbreviation="o121" xml:space="preserve">
-        <code><![CDATA[@OneToOne(targetEntity="${targetclass}")
-     * @JoinColumn(name="${local_id}", referencedColumnName="${remote_id}")]]></code>
+        <code><![CDATA[@ORM\OneToOne(targetEntity="${targetclass}")
+     * @ORM\JoinColumn(name="${local_id}", referencedColumnName="${remote_id}")]]></code>
     </codetemplate>
     <codetemplate abbreviation="oid" xml:space="preserve">
         <code><![CDATA[@ORM\Id
@@ -26,8 +26,8 @@
         <code><![CDATA[@ORM\Column(type="integer")]]></code>
     </codetemplate>
     <codetemplate abbreviation="om2m" xml:space="preserve">
-        <code><![CDATA[@ManyToMany(targetEntity="${targetclass}", inversedBy="${inversedby}")
-     * @JoinTable(name="${tablename}",
+        <code><![CDATA[@ORM\ManyToMany(targetEntity="${targetclass}", inversedBy="${inversedby}")
+     * @ORM\JoinTable(name="${tablename}",
      *      joinColumns={@JoinColumn(name="${local_id}", referencedColumnName="${remote_id}")},
      *      inverseJoinColumns={@JoinColumn(name="${remote_id_inv}", referencedColumnName="${remote_id_inv}")}
      *      )]]></code>
