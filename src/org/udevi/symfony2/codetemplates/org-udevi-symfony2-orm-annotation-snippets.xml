@@ -33,7 +33,11 @@
      *      )]]></code>
     </codetemplate>
     <codetemplate abbreviation="om21" xml:space="preserve">
-        <code><![CDATA[@ORM\ManyToOne(targetEntity="${targetclass}")
+        <code><![CDATA[@ORM\ManyToOne(targetEntity="${targetclass}", inversedBy="${inversedby}")
+     * @ORM\JoinColumn(name="${local_id}", referencedColumnName="${remote_id}")]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="o12m" xml:space="preserve">
+        <code><![CDATA[@ORM\OneToMany(targetEntity="${targetclass}", mappedBy="${mappedby}")
      * @ORM\JoinColumn(name="${local_id}", referencedColumnName="${remote_id}")]]></code>
     </codetemplate>
 </codetemplates>
