@@ -4,9 +4,12 @@
     <codetemplate abbreviation="ostr" xml:space="preserve">
         <code><![CDATA[@ORM\Column(type="string", length="${length}")]]></code>
     </codetemplate>
+    <codetemplate abbreviation="otxt" xml:space="preserve">
+        <code><![CDATA[@ORM\Column(type="text")]]></code>
+    </codetemplate>
     <codetemplate abbreviation="o121" xml:space="preserve">
         <code><![CDATA[@OneToOne(targetEntity="${targetclass}")
-   * @JoinColumn(name="${local_id}", referencedColumnName="${remote_id}")]]></code>
+     * @JoinColumn(name="${local_id}", referencedColumnName="${remote_id}")]]></code>
     </codetemplate>
     <codetemplate abbreviation="oid" xml:space="preserve">
         <code><![CDATA[@ORM\Id
@@ -24,13 +27,13 @@
     </codetemplate>
     <codetemplate abbreviation="om2m" xml:space="preserve">
         <code><![CDATA[@ManyToMany(targetEntity="${targetclass}", inversedBy="${inversedby}")
-   * @JoinTable(name="${tablename}",
-   *      joinColumns={@JoinColumn(name="${local_id}", referencedColumnName="${remote_id}")},
-   *      inverseJoinColumns={@JoinColumn(name="${remote_id_inv}", referencedColumnName="${remote_id_inv}")}
-   *      )]]></code>
+     * @JoinTable(name="${tablename}",
+     *      joinColumns={@JoinColumn(name="${local_id}", referencedColumnName="${remote_id}")},
+     *      inverseJoinColumns={@JoinColumn(name="${remote_id_inv}", referencedColumnName="${remote_id_inv}")}
+     *      )]]></code>
     </codetemplate>
     <codetemplate abbreviation="om21" xml:space="preserve">
         <code><![CDATA[@ORM\ManyToOne(targetEntity="${targetclass}")
-    * @ORM\JoinColumn(name="${local_id}", referencedColumnName="${remote_id}")]]></code>
+     * @ORM\JoinColumn(name="${local_id}", referencedColumnName="${remote_id}")]]></code>
     </codetemplate>
 </codetemplates>
