@@ -7,6 +7,9 @@
     <codetemplate abbreviation="otxt" xml:space="preserve">
         <code><![CDATA[@ORM\Column(type="text")]]></code>
     </codetemplate>
+    <codetemplate abbreviation="odt" xml:space="preserve">
+        <code><![CDATA[@ORM\Column(type="datetime")]]></code>
+    </codetemplate>
     <codetemplate abbreviation="o121" xml:space="preserve">
         <code><![CDATA[@ORM\OneToOne(targetEntity="${targetclass}")
      * @ORM\JoinColumn(name="${local_id}", referencedColumnName="${remote_id}")]]></code>
