@@ -2,5 +2,5 @@ Manifest-Version: 1.0
 OpenIDE-Module: org.udevi.symfony2.codetemplates
 OpenIDE-Module-Layer: org/udevi/symfony2/codetemplates/layer.xml
 OpenIDE-Module-Localizing-Bundle: org/udevi/symfony2/codetemplates/Bundle.properties
-OpenIDE-Module-Specification-Version: 1.0
+OpenIDE-Module-Specification-Version: 1.1
 
